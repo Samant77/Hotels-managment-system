@@ -1,66 +1,107 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+  # Hotel Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Welcome to the Hotel Management System project !!! <br>
+This web application is built using the Laravel framework to provide a comprehensive solution for managing hotel operations efficiently.
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Table of Contents
+- Features
+- Technologies Used
+- Requirements
+- Installation
+- Usage
+- License
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Features
 
-## Learning Laravel
+- User Authentication: Secure user authentication system with role-based access control.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Hotel and Room Management: Upload hotel details including room types, facilities, and pricing. Manage room inventory, availability, and pricing.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Hotel and Room Management: Add, edit, and delete Hotel and room details ..
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Guest Management: Manage guest profiles, including personal details and booking history.
 
-## Laravel Sponsors
+- User Management: Admins can add, edit, and delete user accounts with different roles and permissions.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Admin Dashboard: A comprehensive dashboard for administrators to monitor and manage all aspects of the system.
 
-### Premium Partners
+- All type of list can Export in  JSON file , CVS and Pdf
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+## Technologies Used
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Laravel 
+- MySql
+- HTML/CSS
+- Bootstrap
+- JavaScript
 
-## Code of Conduct
+## Requirements
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- PHP >= 8.2.12
+- Composer
+- Laravel >= 10.x Version
+- MySQL database Used in this Project.
+- XAMPP or any other local server environment
 
-## Security Vulnerabilities
+## Installation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1) Clone the repository:
+
+```bash
+git clone https://github.com/Samant77/hotel-management-system.git
+
+```
+```bash
+cd hotel-management-system
+```
+2) Install dependencies:
+
+```bash
+composer install
+npm install
+npm run dev
+
+```
+
+3) Copy the .env.example file to .env and set up your environment variables:
+
+```bash
+cp .env.example .env
+```
+4) Generate an application key:
+```bash
+php artisan key:generate
+```
+5) Set up your database:
+
+- Configure your database settings in the .env file.
+
+6) Import the SQL file into your database:
+
+ - Open PHPMyAdmin (or your preferred database management tool).
+- Create a new database (e.g., amaxjobs_hms).
+- Import the database.sql file located in the root of the project into the newly created database.
+
+7) Move the project to your XAMPP htdocs directory:
+- Move the project folder to C:/xampp/htdocs/hotel-management-system.
+
+8) Access the project in your browser:
+- Open your browser and go to http://localhost/hotel-management-system.
+
+## Usage
+
+- Register an account or login using an existing account.
+- Navigate to the dashboard to view hotel statistics and operations.
+- Manage rooms, bookings, and customers using the provided interfaces.
+- Display on webside to upload a hotel and its Room.
+- Customer can view the Hotel and Booking a Room.
+
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- This project is licensed under the MIT License. See the LICENSE file for details.
+
